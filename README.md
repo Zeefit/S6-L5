@@ -1,4 +1,4 @@
-ho testo oggi come fare il craking dell'username e passowrd usando un attacco a dizionario sul un utente di prova che ho creato chiamato "test_user" ho iniziato scrivendo sudo adduser test_user (serve a creare un nuovo utente) poi ho fatto sudo service ssh start(per startare il protocollo ssh)
+ho testo oggi come fare il craking dell'username e passowrd usando un attacco a dizionario sul un utente di prova che ho creato chiamato "test_user" ,ho iniziato scrivendo sudo adduser test_user (serve a creare un nuovo utente) poi ho fatto sudo service ssh start(per startare il protocollo ssh)
 e ho fatto l'accesso al nuovo utente ssh facendo "ssh test_user@192.168.1.218" riuscendo a stabilire la connessione,dopodichè ho inziato ad eseguerei l'attacco,scrivendo 
 "hydra -L /home/kali/Desktop/user.txt -P /home/kali/Desktop/rockyou.txt 192.168.1.218 -t1 ssh" (ho messo -t1 per avere un tempo più lento ed evitare che il sistema blocchi l'attacco) in questo caso nel codice -L e -P stanno per 
 -L è l'opzione per specificare un file contenente un elenco di nomi utente
